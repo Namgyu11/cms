@@ -1,106 +1,106 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
+////plugins {
+////    id 'java'
+////    id 'org.springframework.boot' version '3.2.0'
+////    id 'io.spring.dependency-management' version '1.1.4'
+////}
+////
+////group = 'com.zerobase'
+////version = '0.0.1-SNAPSHOT'
+////
+////java {
+////    sourceCompatibility = '17'
+////}
+////
+////configurations {
+////    compileOnly {
+////        extendsFrom annotationProcessor
+////    }
+////}
+////
+////repositories {
+////    mavenCentral()
+////}
+////
+////dependencies {
+////    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+////    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+////    implementation 'org.springframework.boot:spring-boot-starter-web'
+////    implementation 'io.github.openfeign:feign-core:10.7.4'
+////    implementation 'io.github.openfeign:feign-auth:10.7.4'
+////
+////    compileOnly 'org.projectlombok:lombok'
+////
+////    runtimeOnly 'com.h2database:h2'
+////    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+////
+////    annotationProcessor 'org.projectlombok:lombok'
+////
+////    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+////}
+////
+////tasks.named('test') {
+////    useJUnitPlatform()
+////}
+//=======
 //plugins {
-//    id 'java'
-//    id 'org.springframework.boot' version '3.2.0'
-//    id 'io.spring.dependency-management' version '1.1.4'
+//	id 'java'
+//	id 'org.springframework.boot' version '2.6.5'
+//	id 'io.spring.dependency-management' version '1.1.4'
 //}
 //
 //group = 'com.zerobase'
 //version = '0.0.1-SNAPSHOT'
 //
 //java {
-//    sourceCompatibility = '17'
+//	sourceCompatibility = '17'
 //}
 //
 //configurations {
-//    compileOnly {
-//        extendsFrom annotationProcessor
-//    }
+//	compileOnly {
+//		extendsFrom annotationProcessor
+//	}
 //}
 //
 //repositories {
-//    mavenCentral()
+//	mavenCentral()
+//}
+//
+//ext {
+//	set('springCloudVersion', "2021.0.1")
 //}
 //
 //dependencies {
-//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-//    implementation 'org.springframework.boot:spring-boot-starter-web'
-//    implementation 'io.github.openfeign:feign-core:10.7.4'
-//    implementation 'io.github.openfeign:feign-auth:10.7.4'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+//	implementation 'org.springframework.boot:spring-boot-starter-web'
+//	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 //
-//    compileOnly 'org.projectlombok:lombok'
+//	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+//	implementation 'org.apache.commons:commons-lang3:3.7'
 //
-//    runtimeOnly 'com.h2database:h2'
-//    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 //
-//    annotationProcessor 'org.projectlombok:lombok'
 //
-//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//
+//	implementation 'org.springframework.data:spring-data-envers'
+//	compileOnly 'org.projectlombok:lombok'
+//
+//	testImplementation 'com.h2database:h2'
+//	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+//
+//	annotationProcessor 'org.projectlombok:lombok'
+//
+//	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 //}
 //
+//dependencyManagement {
+//
+//	imports {
+//		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+//	}
+//
+//}
 //tasks.named('test') {
-//    useJUnitPlatform()
+//	useJUnitPlatform()
 //}
-=======
-plugins {
-	id 'java'
-	id 'org.springframework.boot' version '2.6.5'
-	id 'io.spring.dependency-management' version '1.1.4'
-}
-
-group = 'com.zerobase'
-version = '0.0.1-SNAPSHOT'
-
-java {
-	sourceCompatibility = '17'
-}
-
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
-
-repositories {
-	mavenCentral()
-}
-
-ext {
-	set('springCloudVersion', "2021.0.1")
-}
-
-dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
-
-	implementation 'io.springfox:springfox-boot-starter:3.0.0'
-	implementation 'org.apache.commons:commons-lang3:3.7'
-
-
-
-
-	implementation 'org.springframework.data:spring-data-envers'
-	compileOnly 'org.projectlombok:lombok'
-
-	testImplementation 'com.h2database:h2'
-	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
-
-	annotationProcessor 'org.projectlombok:lombok'
-
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-dependencyManagement {
-
-	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-	}
-
-}
-tasks.named('test') {
-	useJUnitPlatform()
-}
->>>>>>> 9a0edd2f50e62de15e2208e63dc37edba36c524d
+//>>>>>>> 9a0edd2f50e62de15e2208e63dc37edba36c524d
