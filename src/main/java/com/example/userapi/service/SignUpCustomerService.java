@@ -50,7 +50,7 @@ public class SignUpCustomerService {
         customer.setVerify(true);
     }
 
-    // 트랜잭션을 걸게 되면 JPA 내부에서 동작하는 것 때문에 save 를 하지 않아도 변경사항을 알아채서 자동으로 저장
+    // 트랜잭션을 걸게 되면 JPA 내부에서 동작하는 것 때문에 save 를 하지않아도 변경사항을 알아채서 자동으로 저장
     @Transactional
     public LocalDateTime changeCustomerValidateEmail(Long customerId, String verificationCode) {
         Optional<Customer> customerOptional = customerRepository.findById(customerId);
