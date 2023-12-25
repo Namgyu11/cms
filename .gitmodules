@@ -1,3 +1,6 @@
 [submodule "user-api"]
 	path = user-api
 	url = https://github.com/Namgyu11/zero-base-cms
+[submodule "zero-base-cms"]
+	path = zero-base-cms
+	url = https://github.com/Namgyu11/zero-base-cms
